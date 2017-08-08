@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app  = "sportModule" >
+<head>
+  <title>Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <style>
+ .container-fluid {  background-image : url("ross1.jpg") ; background-size : 100% 100% ; min-height : 700px ;}
+  #name {color : green; }
+ #extend {  min-height : 150px ;  }
+ #red { color : red }
+ #iID {  font-size : 25px ;   }
+ #hide { color : green;  }
+ </style>
+ <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+ <script>
+ $("document").ready(function(){$("button").click( function() {window.location.replace(" http://imgur.com/gallery/"+$("#f").val());});});
+ </script>
+ </head>
+ <body>
+   
+ 
+<div class = "container-fluid"  >
+<div class = "col-xs-12" id = "extend" >
+<div class = "col-xs-6 col-xs-push-4" id= "name" >
+
+
+<h1>RoSmItH'sPaLaCe</h1>
+
+</div>
+<div class = "col-xs-6 col-xs-push-1" >
+<img src = "ross2.png" height = "20%" width = "20%" />
+</div>
+</div>
+<div class = "col-xs-6 col-xs-push-4" id ="box" >
+
+
+<h3 id = "sq">Enter your image ID </h3>
+<input type = "text" class = "form-control" id = "f" name = "id" required /><br/>
+<pre id = "red" >Please enter image id only e.g.  http://imgur.com/gallery/<span id = "iID">ghY2v</span>
+
+As in the above case the last part of the url !! <span id = "hide">else will direct to inValid url :) </span>
+</pre>
+<button class = "btn btn-primary" >Check</button>
+
+
+</div>
+</div>
+ </body>
+ </html>

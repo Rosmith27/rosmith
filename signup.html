@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app  = "sportModule" >
+<head>
+  <title>Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <style>
+ .container-fluid {  background-image : url("ross1.jpg") ; background-size : 100% 100% ; min-height : 700px ;}
+  #name {color : green; }
+ #extend {  min-height : 150px ;  }
+ #sq { color : red }
+ </style>
+ </head>
+ <body>
+   
+ 
+<div class = "container-fluid"  >
+<div class = "col-xs-12" id = "extend" >
+<div class = "col-xs-6 col-xs-push-4" id= "name" >
+
+
+<h1>RoSmItH'sPaLaCe</h1>
+
+</div>
+<div class = "col-xs-6 col-xs-push-1" >
+<img src = "ross2.png" height = "20%" width = "20%" />
+</div>
+</div>
+<div class = "col-xs-6 col-xs-push-4" id ="box" >
+<form action = "chk.php">
+<h3>Enter Your Name</h3>
+<input type = "text" class = "form-control" name = "name" required   />
+<h3>Enter your Password </h3>
+<input type = "text" class = "form-control" name = "pass" required  />
+<h3>Asnwer security Question </h3>
+<h3 id = "sq">Name of Your Friend </h3>
+<input type = "text" class = "form-control" name = "sq" required /><br/>
+<input type = "submit" class = "btn btn-primary" value = "Signup" />
+</form>
+
+</div>
+</div>
+ </body>
+ </html>

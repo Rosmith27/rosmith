@@ -1,0 +1,1 @@
+$("document").ready(function(){$("button").click( function() {window.location.replace(" http://imgur.com/gallery/"+$("#f").val());});});
